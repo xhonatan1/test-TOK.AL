@@ -1,0 +1,85 @@
+@import 'colors'
+
+// Define mixins for media queries
+@mixin mobile
+  @media only screen and (max-width: 767px)
+    @content
+
+@mixin tablet
+  @media only screen and (min-width: 768px) and (max-width: 1023px)
+    @content
+
+@mixin desktop
+  @media only screen and (min-width: 1024px)
+    @content
+
+// Define styles for the navbar
+.navbar__menu
+  color: $light
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 1rem
+  text-align: center
+  text-decoration: none
+
+  .search-box
+    padding: 8px 12px
+    border: 2px solid $Brown
+    border-radius: 4px
+    font-size: 16px
+    margin-right: 10px
+    margin-left: 10px
+    width: 160px
+  .search-button
+      color: $White
+      background-color: $Brown
+      padding: 8px 8px
+      font-weight: bold
+
+  // Apply mobile styles
+  @include mobile
+    flex-direction: column
+    align-items: flex-start
+    padding: 1rem 0.5rem
+
+  // Apply tablet and desktop styles
+  @include tablet
+    padding: 1rem 2rem
+
+  @include desktop
+    padding: 1rem 4rem
+
+.navbar__logo
+  height: 100%
+  padding-left: 12px
+
+  img
+    height: 100%
+
+.navbar__menu--links
+  color: $Brown
+  font-size: 1rem
+  text-transform: uppercase
+  display: flex
+  margin-left: 1rem
+  transition: color 0.3s ease
+  text-decoration: none
+  align-items: center
+
+  &:hover
+    color: $orangeRED
+
+  // Apply mobile styles
+  @include mobile
+    font-size: 1rem
+    margin: 0.5rem 0
+
+  // Apply tablet and desktop styles
+  @include tablet
+    font-size: 0.8rem
+    margin-left: 2rem
+
+  @include desktop
+    font-size: 1.1rem
+    margin-left: 3rem

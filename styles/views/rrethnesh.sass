@@ -1,0 +1,237 @@
+
+$grey: #707070
+$Brown: #A66F47
+$White: #D9D9D9
+$light: #ffffff
+$orangeRED: #FF4500
+$Blue: #3d5878
+
+.topheader
+    background-color: $Brown
+    font-weight: bold
+    display: flex
+    width: 100%
+    @media screen and (max-width: 767px)
+        width: 80%
+    .topheader__contactus
+        color: $White
+        display: flex
+        justify-content: center
+        text-align: left
+        padding: 1rem
+        align-items: center
+        text-decoration: none
+
+        .topheader__contactus--login
+
+            top: 1rem
+            right: 1rem
+            padding: 1rem
+            color: $White
+            font-weight: bold
+            display: flex
+            align-items: center
+            font-size: 1.3rem
+            a
+                text-decoration: none
+                color: $White
+                margin-left: 1rem
+
+.navbar__menu
+    color: $light
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 1rem
+    text-align: center
+    text-decoration: none
+    .navbar__logo
+        height: 100%
+        padding-left: 12px
+
+        img
+            height: 100%
+
+    .navbar__menu--links
+        color: $Brown
+        font-size: 1rem
+        text-transform: uppercase
+        display: flex
+        margin-left: 1rem
+        transition: color 0.3s ease
+        text-decoration: none
+        align-items: center
+
+        &:hover
+            color: $orangeRED
+
+.stafi__jone
+    margin: 0
+    padding: 20px
+    color: $Brown
+    font-size: 28px
+    width: 100%
+    justify-content: center
+    align-items: center
+    text-align: center
+
+.rektori
+    display: flex
+    flex-wrap: wrap
+
+    & h1, & h2, & h3
+        flex: 1 1 40%
+        padding: 0 20px
+        display: inline-block
+        justify-content: center
+        align-items: center
+        font-size: 24pt
+        margin: 22px
+        line-height: 49px
+
+    & h1
+        font-size: 24px
+        color: $grey
+        text-align: center
+        margin-left: 5px
+        margin-right: 5px
+
+    & h2
+        font-size: 20px
+        color: $Blue
+        text-align: center
+        justify-items: center
+
+    & h3
+        font-size: 16px
+        color: $Brown
+        text-align: center
+        justify-items: center
+
+    &__image
+        width: 451px
+        height: 451px
+        background-image: url('/images/rrethneshphoto/rektori.png')
+        background-repeat: no-repeat
+        background-size: cover
+        float: right
+        flex: 1 1 35%
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    font-family: Arial, sans-serif
+    background-color: #f5f5f5
+
+h1
+    text-align: center
+    margin: 20px 0
+
+.gallery
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    margin: 20px
+
+.card
+    width: 500px
+    margin: 20px
+    border: 1px solid #ccc
+    border-radius: 5px
+    overflow: hidden
+    background-color: #fff
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3)
+
+    & img
+        width: 100%
+        height: 200px
+        object-fit: cover
+
+.info
+    padding: 20px
+
+    & h2
+        font-size: 24px
+        margin-bottom: 10px
+        color: $Brown
+
+    & p
+        font-size: 16px
+        margin-bottom: 5px
+        color: $Blue
+.gallery2
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    margin: 20px
+
+.card2
+    width: 300px
+    margin: 20px
+    border: 1px solid #ccc
+    border-radius: 5px
+    overflow: hidden
+    background-color: #fff
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3)
+
+    & img
+        width: 100%
+        height: 200px
+        object-fit: cover
+
+.info
+    padding: 20px
+
+    & h2
+        font-size: 24px
+        margin-bottom: 10px
+        color: $Brown
+
+    & p
+        font-size: 16px
+        margin-bottom: 5px
+        color: $Blue
+footer
+    width: 100%
+    height: 350px
+    background-color: $Blue
+    padding: 40px 0
+    margin-bottom: 0
+    .footer__bottom
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+        padding: 50px
+
+        &--column h4
+            font-size: 18px
+            font-weight: bold
+            margin-bottom: 20px
+            color: $Brown
+
+        &--column ul
+            list-style: none
+            margin: 0
+            padding: 0
+
+        &--column ul li
+            margin-bottom: 8px
+            font-size: 14px
+
+        &--column ul li a
+            text-decoration: none
+            color: $White
+
+        &--column ul li a:hover
+            color: $Brown
+
+        &--column ul li i
+            font-size: 24px
+            color: $White
+            margin-right: 12px
+            margin-left: 12px
